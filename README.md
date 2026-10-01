@@ -46,4 +46,8 @@ python exp_stock.py                        # needs ../properties_LSOA21.csv (Geo
 - The stage 01–04 scripts that built the graph, features and folds. The files they produced are in `outputs/`.
 - Raw EPC and Census inputs (`datasets/`).
 
-TODO: add the stage 01–04 scripts if they are still on Myriad, and choose a licence (EPC-socio-economic uses MIT).
+TODO: add the stage 01–04 scripts if they are still on Myriad.
+
+## Licence
+
+The code is released under the MIT licence (see `LICENSE`). Data files in `outputs/` and `spatial_2x2/` are derived from EPC and Census 2021 data and remain subject to those sources' licences.
