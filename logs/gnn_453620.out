@@ -1,0 +1,220 @@
+GPU: NVIDIA A100-PCIE-40GB
+Loading features...
+  Shape: (33755, 40)
+  Features: (33755, 36)  Target: (33755,)
+Loading folds...
+  5 folds loaded
+
+Fold 0  train=27,282  test=6,473
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 1  train=25,610  test=8,145
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 2  train=20,667  test=13,088
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 3  train=31,599  test=2,156
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 4  train=29,862  test=3,893
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Saved: /myriadfs/home/ucbvauy/Scratch/lsoa-graph/outputs/results_baselines.csv
+  Rows: 101,265
+  Models: ['Ridge', 'RandomForest', 'XGBoost']
+  Folds:  [0, 1, 2, 3, 4]
+Device: cuda
+Loading features...
+  X: (33755, 36)  y: (33755, 1)
+Loading graph...
+  Contiguity edges: 197,568
+Building IMD k-NN edges using 'Mean Household Deprivation'...
+  Similarity values: min=0.2218  max=1.5710
+  IMD k-NN edges (k=10): 385,742
+  Heterogeneous edges (contiguity + k-NN): 583,120
+Loading folds...
+  5 folds
+
+[contiguity] Fold 0  train=27,282  test=6,473
+  GraphSAGE epoch  50  train_loss=0.7204
+  GraphSAGE epoch 100  train_loss=0.6282
+  GraphSAGE epoch 150  train_loss=0.5796
+  GraphSAGE epoch 200  train_loss=0.5504
+  GraphSAGE TEST RMSE (native units): 4.3058
+  GAT epoch  50  train_loss=0.9114
+  GAT epoch 100  train_loss=0.8501
+  GAT epoch 150  train_loss=0.8133
+  GAT epoch 200  train_loss=0.7921
+  GAT epoch 250  train_loss=0.7813
+  GAT epoch 300  train_loss=0.7664
+  GAT epoch 350  train_loss=0.7633
+  GAT epoch 400  train_loss=0.7526
+  GAT TEST RMSE (native units): 5.0902
+
+[contiguity] Fold 1  train=25,610  test=8,145
+  GraphSAGE epoch  50  train_loss=0.6784
+  GraphSAGE epoch 100  train_loss=0.5816
+  GraphSAGE epoch 150  train_loss=0.5359
+  GraphSAGE epoch 200  train_loss=0.5110
+  GraphSAGE TEST RMSE (native units): 4.0300
+  GAT epoch  50  train_loss=0.9404
+  GAT epoch 100  train_loss=0.8604
+  GAT epoch 150  train_loss=0.8359
+  GAT epoch 200  train_loss=0.8205
+  GAT epoch 250  train_loss=0.8079
+  GAT epoch 300  train_loss=0.7922
+  GAT epoch 350  train_loss=0.7915
+  GAT epoch 400  train_loss=0.7775
+  GAT TEST RMSE (native units): 4.5805
+
+[contiguity] Fold 2  train=20,667  test=13,088
+  GraphSAGE epoch  50  train_loss=0.6676
+  GraphSAGE epoch 100  train_loss=0.5868
+  GraphSAGE epoch 150  train_loss=0.5461
+  GraphSAGE epoch 200  train_loss=0.5235
+  GraphSAGE TEST RMSE (native units): 4.4070
+  GAT epoch  50  train_loss=0.9127
+  GAT epoch 100  train_loss=0.8449
+  GAT epoch 150  train_loss=0.8235
+  GAT epoch 200  train_loss=0.7982
+  GAT epoch 250  train_loss=0.7852
+  GAT epoch 300  train_loss=0.7899
+  GAT epoch 350  train_loss=0.7735
+  GAT epoch 400  train_loss=0.7640
+  GAT TEST RMSE (native units): 5.0571
+
+[contiguity] Fold 3  train=31,599  test=2,156
+  GraphSAGE epoch  50  train_loss=0.6676
+  GraphSAGE epoch 100  train_loss=0.5879
+  GraphSAGE epoch 150  train_loss=0.5472
+  GraphSAGE epoch 200  train_loss=0.5253
+  GraphSAGE TEST RMSE (native units): 4.2380
+  GAT epoch  50  train_loss=1.0295
+  GAT epoch 100  train_loss=0.9279
+  GAT epoch 150  train_loss=0.8768
+  GAT epoch 200  train_loss=0.8558
+  GAT epoch 250  train_loss=0.8354
+  GAT epoch 300  train_loss=0.8220
+  GAT epoch 350  train_loss=0.8131
+  GAT epoch 400  train_loss=0.8007
+  GAT TEST RMSE (native units): 5.1672
+
+[contiguity] Fold 4  train=29,862  test=3,893
+  GraphSAGE epoch  50  train_loss=0.7059
+  GraphSAGE epoch 100  train_loss=0.6142
+  GraphSAGE epoch 150  train_loss=0.5656
+  GraphSAGE epoch 200  train_loss=0.5413
+  GraphSAGE TEST RMSE (native units): 4.4864
+  GAT epoch  50  train_loss=0.9849
+  GAT epoch 100  train_loss=0.8933
+  GAT epoch 150  train_loss=0.8392
+  GAT epoch 200  train_loss=0.8241
+  GAT epoch 250  train_loss=0.8096
+  GAT epoch 300  train_loss=0.7950
+  GAT epoch 350  train_loss=0.7941
+  GAT epoch 400  train_loss=0.7877
+  GAT TEST RMSE (native units): 5.4720
+
+[heterogeneous] Fold 0  train=27,282  test=6,473
+  GraphSAGE epoch  50  train_loss=0.6815
+  GraphSAGE epoch 100  train_loss=0.6075
+  GraphSAGE epoch 150  train_loss=0.5654
+  GraphSAGE epoch 200  train_loss=0.5411
+  GraphSAGE TEST RMSE (native units): 4.3169
+  GAT epoch  50  train_loss=0.9539
+  GAT epoch 100  train_loss=0.9230
+  GAT epoch 150  train_loss=0.9038
+  GAT epoch 200  train_loss=0.8941
+  GAT epoch 250  train_loss=0.8847
+  GAT epoch 300  train_loss=0.8760
+  GAT epoch 350  train_loss=0.8696
+  GAT epoch 400  train_loss=0.8638
+  GAT TEST RMSE (native units): 5.4901
+
+[heterogeneous] Fold 1  train=25,610  test=8,145
+  GraphSAGE epoch  50  train_loss=0.6772
+  GraphSAGE epoch 100  train_loss=0.5842
+  GraphSAGE epoch 150  train_loss=0.5455
+  GraphSAGE epoch 200  train_loss=0.5241
+  GraphSAGE TEST RMSE (native units): 4.0951
+  GAT epoch  50  train_loss=0.9275
+  GAT epoch 100  train_loss=0.8999
+  GAT epoch 150  train_loss=0.8871
+  GAT epoch 200  train_loss=0.8784
+  GAT epoch 250  train_loss=0.8665
+  GAT epoch 300  train_loss=0.8601
+  GAT epoch 350  train_loss=0.8489
+  GAT epoch 400  train_loss=0.8422
+  GAT TEST RMSE (native units): 4.8597
+
+[heterogeneous] Fold 2  train=20,667  test=13,088
+  GraphSAGE epoch  50  train_loss=0.6666
+  GraphSAGE epoch 100  train_loss=0.5950
+  GraphSAGE epoch 150  train_loss=0.5580
+  GraphSAGE epoch 200  train_loss=0.5384
+  GraphSAGE TEST RMSE (native units): 4.3963
+  GAT epoch  50  train_loss=0.9914
+  GAT epoch 100  train_loss=0.9529
+  GAT epoch 150  train_loss=0.8998
+  GAT epoch 200  train_loss=0.8829
+  GAT epoch 250  train_loss=0.8718
+  GAT epoch 300  train_loss=0.8697
+  GAT epoch 350  train_loss=0.8547
+  GAT epoch 400  train_loss=0.8489
+  GAT TEST RMSE (native units): 5.5917
+
+[heterogeneous] Fold 3  train=31,599  test=2,156
+  GraphSAGE epoch  50  train_loss=0.6928
+  GraphSAGE epoch 100  train_loss=0.6216
+  GraphSAGE epoch 150  train_loss=0.5813
+  GraphSAGE epoch 200  train_loss=0.5613
+  GraphSAGE TEST RMSE (native units): 4.2523
+  GAT epoch  50  train_loss=0.9401
+  GAT epoch 100  train_loss=0.9165
+  GAT epoch 150  train_loss=0.9002
+  GAT epoch 200  train_loss=0.8931
+  GAT epoch 250  train_loss=0.8854
+  GAT epoch 300  train_loss=0.8763
+  GAT epoch 350  train_loss=0.8701
+  GAT epoch 400  train_loss=0.8683
+  GAT TEST RMSE (native units): 5.5729
+
+[heterogeneous] Fold 4  train=29,862  test=3,893
+  GraphSAGE epoch  50  train_loss=0.7061
+  GraphSAGE epoch 100  train_loss=0.6242
+  GraphSAGE epoch 150  train_loss=0.5816
+  GraphSAGE epoch 200  train_loss=0.5632
+  GraphSAGE TEST RMSE (native units): 4.5822
+  GAT epoch  50  train_loss=1.0109
+  GAT epoch 100  train_loss=0.9634
+  GAT epoch 150  train_loss=0.9442
+  GAT epoch 200  train_loss=0.9306
+  GAT epoch 250  train_loss=0.9204
+  GAT epoch 300  train_loss=0.9103
+  GAT epoch 350  train_loss=0.9042
+  GAT epoch 400  train_loss=0.8970
+  GAT TEST RMSE (native units): 6.0833
+
+Saved: /myriadfs/home/ucbvauy/Scratch/lsoa-graph/outputs/results_gnn.csv
+  Rows:        135,020
+  Models:      ['GraphSAGE', 'GAT']
+  Graph types: ['contiguity', 'heterogeneous']
+  Folds:       [0, 1, 2, 3, 4]
+
+Test RMSE by graph type and model:
+   graph_type     model  test_RMSE
+   contiguity       GAT   5.010580
+   contiguity GraphSAGE   4.298050
+heterogeneous       GAT   5.463845
+heterogeneous GraphSAGE   4.323266

@@ -1,0 +1,11 @@
+# Licensed GeoDS property data and anything derived from it: never commit
+properties_LSOA21.csv
+spatial_2x2/stock_features_lsoa.parquet
+
+# Raw EPC and Census inputs (see config.py)
+datasets
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store

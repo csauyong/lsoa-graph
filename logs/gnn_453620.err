@@ -1,0 +1,13 @@
+Unloading gcc-libs/4.9.2 <aL>
+  Unloading dependent: mrxvt/0.5.4 tmux/3.3a giflib/5.1.1 dos2unix/7.3
+    nedit/5.6-aug15 nano/2.4.2 screen/4.9.0 subversion/1.14.1 apr-util/1.6.1
+    apr/1.7.0 git/2.32.0 flex/2.5.39 cmake/3.21.1
+Loading python/3.11.4-gnu-10.2.0
+  Loading requirement: openssl/1.1.1u
+/myriadfs/home/ucbvauy/envs/geo-gpu/lib/python3.11/site-packages/xgboost/core.py:377: FutureWarning: Your system has an old version of glibc (< 2.28). We will stop supporting Linux distros with glibc older than 2.28 after **May 31, 2025**. Please upgrade to a recent Linux distro (with glibc >= 2.28) to use future versions of XGBoost.
+Note: You have installed the 'manylinux2014' variant of XGBoost. Certain features such as GPU algorithms or federated learning are not available. To use these features, please upgrade to a recent Linux distro with glibc 2.28+, and install the 'manylinux_2_28' variant.
+  warnings.warn(
+/myriadfs/home/ucbvauy/envs/geo-gpu/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by /myriadfs/home/ucbvauy/envs/geo-gpu/lib/python3.11/site-packages/libpyg.so)
+  import torch_geometric.typing
+/myriadfs/home/ucbvauy/envs/geo-gpu/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by /myriadfs/home/ucbvauy/envs/geo-gpu/lib/python3.11/site-packages/libpyg.so)
+  import torch_geometric.typing

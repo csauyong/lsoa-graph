@@ -1,0 +1,153 @@
+GPU: NVIDIA A100-PCIE-40GB
+Loading features...
+  Shape: (33755, 40)
+  Features: (33755, 36)  Target: (33755,)
+Loading folds...
+  5 folds loaded
+
+Fold 0  train=27,282  test=6,473
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 1  train=25,610  test=8,145
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 2  train=20,667  test=13,088
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 3  train=31,599  test=2,156
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Fold 4  train=29,862  test=3,893
+  Training Ridge... done
+  Training RandomForest... done
+  Training XGBoost... done
+
+Saved: /myriadfs/home/ucbvauy/Scratch/lsoa-graph/outputs/results_baselines.csv
+  Rows: 101,265
+  Models: ['Ridge', 'RandomForest', 'XGBoost']
+  Folds:  [0, 1, 2, 3, 4]
+Device: cuda
+Loading features...
+  X: (33755, 36)  y: torch.Size([33755])
+Loading graph...
+  Contiguity edges: 197,568
+Building IMD k-NN edges using 'Mean Household Deprivation'...
+  Similarity values: min=0.2218  max=1.5710
+  IMD k-NN edges (k=10): 385,742
+  Heterogeneous edges (contiguity + k-NN): 583,120
+Loading folds...
+  5 folds
+
+[contiguity] Fold 0  train=27,282  test=6,473
+  GraphSAGE epoch  50  train_loss=3816.1084
+  GraphSAGE epoch 100  train_loss=2325.0823
+  GraphSAGE epoch 150  train_loss=945.5307
+  GraphSAGE epoch 200  train_loss=480.5422
+  GAT epoch  50  train_loss=4079.6626
+  GAT epoch 100  train_loss=3332.0049
+  GAT epoch 150  train_loss=2611.3657
+  GAT epoch 200  train_loss=2056.4578
+
+[contiguity] Fold 1  train=25,610  test=8,145
+  GraphSAGE epoch  50  train_loss=3913.3091
+  GraphSAGE epoch 100  train_loss=2330.0273
+  GraphSAGE epoch 150  train_loss=893.9202
+  GraphSAGE epoch 200  train_loss=407.3048
+  GAT epoch  50  train_loss=3533.5210
+  GAT epoch 100  train_loss=2112.3423
+  GAT epoch 150  train_loss=1742.1492
+  GAT epoch 200  train_loss=1636.3053
+
+[contiguity] Fold 2  train=20,667  test=13,088
+  GraphSAGE epoch  50  train_loss=3968.2507
+  GraphSAGE epoch 100  train_loss=2614.3010
+  GraphSAGE epoch 150  train_loss=1201.3813
+  GraphSAGE epoch 200  train_loss=530.9338
+  GAT epoch  50  train_loss=4100.6587
+  GAT epoch 100  train_loss=3498.6797
+  GAT epoch 150  train_loss=2398.0183
+  GAT epoch 200  train_loss=1110.1884
+
+[contiguity] Fold 3  train=31,599  test=2,156
+  GraphSAGE epoch  50  train_loss=3942.0657
+  GraphSAGE epoch 100  train_loss=2458.1816
+  GraphSAGE epoch 150  train_loss=982.9731
+  GraphSAGE epoch 200  train_loss=468.5824
+  GAT epoch  50  train_loss=4325.9897
+  GAT epoch 100  train_loss=3796.4841
+  GAT epoch 150  train_loss=3165.1716
+  GAT epoch 200  train_loss=2527.0618
+
+[contiguity] Fold 4  train=29,862  test=3,893
+  GraphSAGE epoch  50  train_loss=4031.5254
+  GraphSAGE epoch 100  train_loss=2686.6804
+  GraphSAGE epoch 150  train_loss=1181.3032
+  GraphSAGE epoch 200  train_loss=520.7292
+  GAT epoch  50  train_loss=3981.0684
+  GAT epoch 100  train_loss=2771.0481
+  GAT epoch 150  train_loss=1494.3282
+  GAT epoch 200  train_loss=806.9870
+
+[heterogeneous] Fold 0  train=27,282  test=6,473
+  GraphSAGE epoch  50  train_loss=4021.4587
+  GraphSAGE epoch 100  train_loss=2664.5178
+  GraphSAGE epoch 150  train_loss=1201.3481
+  GraphSAGE epoch 200  train_loss=487.1521
+  GAT epoch  50  train_loss=2922.4087
+  GAT epoch 100  train_loss=1605.1697
+  GAT epoch 150  train_loss=1470.4497
+  GAT epoch 200  train_loss=1401.3096
+
+[heterogeneous] Fold 1  train=25,610  test=8,145
+  GraphSAGE epoch  50  train_loss=4035.0728
+  GraphSAGE epoch 100  train_loss=2622.6963
+  GraphSAGE epoch 150  train_loss=1081.1423
+  GraphSAGE epoch 200  train_loss=421.0844
+  GAT epoch  50  train_loss=3841.2241
+  GAT epoch 100  train_loss=2605.3779
+  GAT epoch 150  train_loss=1719.4861
+  GAT epoch 200  train_loss=1015.7400
+
+[heterogeneous] Fold 2  train=20,667  test=13,088
+  GraphSAGE epoch  50  train_loss=3818.0627
+  GraphSAGE epoch 100  train_loss=2294.7593
+  GraphSAGE epoch 150  train_loss=910.6658
+  GraphSAGE epoch 200  train_loss=462.1227
+  GAT epoch  50  train_loss=2194.1584
+  GAT epoch 100  train_loss=1436.5647
+  GAT epoch 150  train_loss=1373.8698
+  GAT epoch 200  train_loss=1330.5087
+
+[heterogeneous] Fold 3  train=31,599  test=2,156
+  GraphSAGE epoch  50  train_loss=3989.6875
+  GraphSAGE epoch 100  train_loss=2490.6677
+  GraphSAGE epoch 150  train_loss=939.3466
+  GraphSAGE epoch 200  train_loss=422.3441
+  GAT epoch  50  train_loss=3987.7356
+  GAT epoch 100  train_loss=3286.4250
+  GAT epoch 150  train_loss=2516.5684
+  GAT epoch 200  train_loss=1910.3765
+
+[heterogeneous] Fold 4  train=29,862  test=3,893
+  GraphSAGE epoch  50  train_loss=4139.8955
+  GraphSAGE epoch 100  train_loss=2854.7095
+  GraphSAGE epoch 150  train_loss=1242.8650
+  GraphSAGE epoch 200  train_loss=528.4996
+  GAT epoch  50  train_loss=4172.5400
+  GAT epoch 100  train_loss=3458.2180
+  GAT epoch 150  train_loss=2615.4375
+  GAT epoch 200  train_loss=2031.8367
+
+Saved: /myriadfs/home/ucbvauy/Scratch/lsoa-graph/outputs/results_gnn.csv
+  Rows:        135,020
+  Models:      ['GraphSAGE', 'GAT']
+  Graph types: ['contiguity', 'heterogeneous']
+  Folds:       [0, 1, 2, 3, 4]
